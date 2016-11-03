@@ -1,0 +1,15 @@
+html
+  head
+    styles
+      "public/css/main.emr"
+
+  body
+    header
+      h1 Emerald!
+      h2 A templating engine for multiple languages.
+
+    main
+      section
+        h3 About
+        p Emerald is a templating engine designed for use in multiple languages.
+        p Emerald may be used as a templating engine for node, python, ruby, or go web applications.
