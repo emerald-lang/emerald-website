@@ -10,5 +10,5 @@ rm .gitignore # We want all compiled assets! ALL OF THEM
 echo "emerald" > .gitignore # except emerald
 git add --all
 git commit -m "$message"
-git push --force --quiet "https://github.com/emerald-lang/website.git" source:master > /dev/null 2>&1
+git push --force --quiet "https://github.com/emerald-lang/website.git" develop:master
 echo "Deployed! Going to sleep..."
