@@ -3,3 +3,6 @@ deployment:
     branch: develop
     commands:
       - ./deploy.sh
+test:
+  override:
+    - ./build.sh
