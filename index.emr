@@ -17,18 +17,70 @@ html
           span sample.emr (
             class "code"
           )
-        code
-          pre ->
-            sample
+        pre
+          code =>
+            html
+              head
+                title Sample 1
+                styles
+                  "css/style.css"
+
+              body
+                div
+                  h1 Test this out
+                  button Click me (
+                    class "primary"
+                  )
+
+                each people as person
+                div
+                  h2 |person.name|
+                  p |person.description|
+
+        h2.code
+          span context.json (
+            class "code"
+          )
+        pre
+          code =>
+            {
+              people: [
+                {name: "Someone", description: "A guy"},
+                {name: "Someone Else", description: "Another guy"}
+              ]
+            }
 
       section
         h2.code
           span sample.html (
             class "code"
           )
-        code
-          pre ->
-            sample
+        pre (
+          style "flex: 1"
+        )
+          code ->
+            <html>
+              <head>
+                <title>Sample 1</title>
+                <link rel="stylesheet" href="css/style.css" />
+              </head>
+              <body>
+                <div>
+                  <h1>Test this out</h1>
+                  <button class="primary">Click me</button>
+                </div>
+
+                <div>
+                  <h2>Someone</h2>
+                  <h2>A guy</h2>
+                </div>
+
+                <div>
+                  <h2>Someone Else</h2>
+                  <h2>Another guy</h2>
+                </div>
+              </body>
+            </html>
 
     footer
       a View on GitHub (
