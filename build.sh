@@ -7,4 +7,4 @@ bundle install
 cd ..
 
 emerald/bin/emerald process index.emr -b
-mv index.html.emr index.html
+mv index.emr.html index.html
