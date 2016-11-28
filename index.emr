@@ -1,0 +1,38 @@
+html
+  head
+    title Emerald language
+    styles
+      "css/emerald.css"
+
+  body
+    header
+      h1 Emerald
+      p A language agnostic templating engine
+
+    section (
+      class "split"
+    )
+      section
+        h2
+          span sample.emr (
+            class "code"
+          )
+        code
+          pre ->
+            sample
+
+      section
+        h2.code
+          span sample.html (
+            class "code"
+          )
+        code
+          pre ->
+            sample
+
+    footer
+      a View on GitHub (
+        class "button"
+        href "https://github.com/emerald-lang/emerald"
+        target "_blank"
+      )
