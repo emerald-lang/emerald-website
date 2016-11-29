@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# compile sass and coffeescript
+./bin/compile.sh
+
 git clone git@github.com:emerald-lang/emerald.git
 cd emerald
 git checkout develop
