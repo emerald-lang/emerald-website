@@ -1,4 +1,5 @@
 # Files
+*.html
 .DS_Store
 pubspec.lock
 
