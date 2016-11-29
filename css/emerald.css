@@ -91,14 +91,13 @@ a.button:hover {
 @media all and (max-width: 860px) {
   section.split {
     flex-direction: column;
-    /*align-items: stretch;*/
-    /*justify-content: center;*/
   }
 
   section.split > section {
     max-width: inherit;
     margin-right: 0;
     margin-bottom: 2em;
+    display: block;
   }
 
   section.split > section:last-child {
