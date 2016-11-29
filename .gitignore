@@ -1,10 +1,1 @@
-# Files
-*.html
-.DS_Store
-pubspec.lock
-
-# Directories
-.packages
-.pub
 emerald
-js
