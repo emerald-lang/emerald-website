@@ -4,6 +4,11 @@ html
     styles
       "css/emerald.css"
 
+    meta(
+      name "viewport"
+      content "width=device-width"
+    )
+
   body
     header
       h1 Emerald
