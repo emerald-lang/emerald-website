@@ -1,1 +1,1 @@
-dart ./dart/tests/test_parser.dart
+# Unit test your coffeescript parser here

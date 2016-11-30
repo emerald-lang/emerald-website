@@ -1,1 +1,2 @@
-dart2js ./dart/parser.dart -o ./js/parser.js
+# Compile sass and coffeescript here
+coffee -o ./js/ -c coffee/main.coffee
