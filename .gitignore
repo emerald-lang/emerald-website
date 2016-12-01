@@ -1,4 +1,10 @@
+
+# Files
 *.html
 .DS_Store
+
+# Directories
 .sass-cache
 emerald
+css
+js

@@ -1,5 +1,6 @@
 <html><head><title>Emerald language</title>
     <link rel='stylesheet' href="css/emerald.css" />
+    <link rel='stylesheet' href="css/syntax.css" />
     <meta name="viewport" content="width=device-width"></meta></head>
 <body>
   <header>
@@ -11,26 +12,32 @@
       <h2><span class="code">sample.emr</span></h2>
       <pre><code>html
   head
-    title Sample 1
+    title Emerald Example
     styles
-      &quot;css/style.css&quot;
+      &quot;css/nav.css&quot;
+      &quot;css/main.css&quot;
+      &quot;css/footer.css&quot;
 
   body
-    div
+    header
       h1 Test this out
-      button Click me (
-        class &quot;primary&quot;
-      )
+      button.primary Click me
 
-    each people as person
-    div
-      h2 |person.name|
-      p |person.description|</code></pre>
+    main
+      each people as person
+      div
+        h2 |person.name|
+        p  |person.info|
+
+    * Mabye do copyright here?
+    footer
+      p -&gt; Like what you see?
+        Check out the docs for more examples!</code></pre>
       <h2><span class="code">context.json</span></h2>
       <pre><code>{
   people: [
-    {name: &quot;Someone&quot;, description: &quot;A guy&quot;},
-    {name: &quot;Someone Else&quot;, description: &quot;Another guy&quot;}
+    {name: &quot;Someone&quot;, info: &quot;A guy&quot;},
+    {name: &quot;Someone Else&quot;, info: &quot;Another guy&quot;}
   ]
 }</code></pre>
     </section>

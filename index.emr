@@ -3,6 +3,7 @@ html
     title Emerald language
     styles
       "css/emerald.css"
+      "css/syntax.css"
 
     meta(
       name "viewport"
@@ -26,21 +27,27 @@ html
           code =>
             html
               head
-                title Sample 1
+                title Emerald Example
                 styles
-                  "css/style.css"
+                  "css/nav.css"
+                  "css/main.css"
+                  "css/footer.css"
 
               body
-                div
+                header
                   h1 Test this out
-                  button Click me (
-                    class "primary"
-                  )
+                  button.primary Click me
 
-                each people as person
-                div
-                  h2 |person.name|
-                  p |person.description|
+                main
+                  each people as person
+                  div
+                    h2 |person.name|
+                    p  |person.info|
+
+                * Mabye do copyright here?
+                footer
+                  p -> Like what you see?
+                    Check out the docs for more examples!
 
         h2.code
           span context.json (
@@ -50,8 +57,8 @@ html
           code =>
             {
               people: [
-                {name: "Someone", description: "A guy"},
-                {name: "Someone Else", description: "Another guy"}
+                {name: "Someone", info: "A guy"},
+                {name: "Someone Else", info: "Another guy"}
               ]
             }
 
