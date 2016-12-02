@@ -11,7 +11,8 @@ html
       "css/syntax.css"
 
     scripts
-      "js/syntax.js"
+      "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"
+      "js/parser.js"
 
     * NOTE: add metas rule.
     meta (
@@ -20,6 +21,9 @@ html
     )
 
   body
+    p Test this out. (
+      id "test"
+    )
     header
       h1 Emerald
       p A language agnostic templating engine
@@ -32,7 +36,9 @@ html
           span sample.emr (
             class "code"
           )
-        pre
+        pre (
+          id "main-code"
+        )
           code =>
             html
               head

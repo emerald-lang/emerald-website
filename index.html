@@ -3,10 +3,12 @@ Copyright 2016, Emerald Language -->
 <html><head><title>Emerald language</title>
     <link rel='stylesheet' href="css/emerald.css" />
     <link rel='stylesheet' href="css/syntax.css" />
-    <script type='text/javascript' src="js/syntax.js"></script>
+    <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type='text/javascript' src="js/parser.js"></script>
     <!-- NOTE: add metas rule. -->
     <meta name="viewport" content="width=device-width"></meta></head>
 <body>
+  <p id="test">Test this out.</p>
   <header>
     <h1>Emerald</h1>
     <p>A language agnostic templating engine</p>
@@ -14,7 +16,7 @@ Copyright 2016, Emerald Language -->
   <section class="split">
     <section>
       <h2><span class="code">sample.emr</span></h2>
-      <pre><code>html
+      <pre id="main-code"><code>html
   head
     title Emerald Example
 

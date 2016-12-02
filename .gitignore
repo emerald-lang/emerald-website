@@ -1,11 +1,8 @@
 # Files
 *.html
 .DS_Store
-pubspec.lock
 
 # Directories
-.packages
-.pub
 .sass-cache
 emerald
 css
