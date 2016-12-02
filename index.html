@@ -1,6 +1,10 @@
+<!-- Emerald Language Wesite
+Copyright 2016, Emerald Language -->
 <html><head><title>Emerald language</title>
     <link rel='stylesheet' href="css/emerald.css" />
     <link rel='stylesheet' href="css/syntax.css" />
+    <script type='text/javascript' src="js/syntax.js"></script>
+    <!-- NOTE: add metas rule. -->
     <meta name="viewport" content="width=device-width"></meta></head>
 <body>
   <header>
@@ -13,31 +17,33 @@
       <pre><code>html
   head
     title Emerald Example
+
     styles
-      &quot;css/nav.css&quot;
       &quot;css/main.css&quot;
       &quot;css/footer.css&quot;
 
+    scripts
+      &quot;js/main.js&quot;
+
   body
     header
-      h1 Test this out
-      button.primary Click me
+      h1 Emerald Language
+      h3 The people
 
     main
       each people as person
-      div
+      section
         h2 |person.name|
         p  |person.info|
 
-    * Mabye do copyright here?
     footer
-      p -&gt; Like what you see?
-        Check out the docs for more examples!</code></pre>
+      p Copyright 2016, Emerald Language</code></pre>
       <h2><span class="code">context.json</span></h2>
       <pre><code>{
   people: [
-    {name: &quot;Someone&quot;, info: &quot;A guy&quot;},
-    {name: &quot;Someone Else&quot;, info: &quot;Another guy&quot;}
+    {name: &quot;Andrew&quot;, info: &quot;Plays the sax.&quot;},
+    {name: &quot;Dave&quot;, info: &quot;Draws cool stuff.&quot;}
+    {name: &quot;Yu Chen Hou&quot;}
   ]
 }</code></pre>
     </section>
@@ -45,24 +51,39 @@
       <h2><span class="code">sample.html</span></h2>
       <pre style="flex: 1"><code>&lt;html&gt;
   &lt;head&gt;
-    &lt;title&gt;Sample 1&lt;/title&gt;
-    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/style.css&quot; /&gt;
+    &lt;title&gt;Emerald Example&lt;/title&gt;
+
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/main.css&quot; /&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;css/footer.css&quot; /&gt;
+
+    &lt;script type=&quot;text/javascript&quot; src=&quot;js/main.js&quot;&gt;&lt;/script&gt;
   &lt;/head&gt;
+
   &lt;body&gt;
-    &lt;div&gt;
-      &lt;h1&gt;Test this out&lt;/h1&gt;
-      &lt;button class=&quot;primary&quot;&gt;Click me&lt;/button&gt;
-    &lt;/div&gt;
+    &lt;header&gt;
+      &lt;h1&gt;Emerald Language&lt;/h1&gt;
+      &lt;h3&gt;The people&lt;/h3&gt;
+    &lt;/header&gt;
 
-    &lt;div&gt;
-      &lt;h2&gt;Someone&lt;/h2&gt;
-      &lt;h2&gt;A guy&lt;/h2&gt;
-    &lt;/div&gt;
+    &lt;main&gt;
+      &lt;section&gt;
+        &lt;h2&gt;Andrew&lt;/h2&gt;
+        &lt;p&gt;Plays the sax.&lt;/p&gt;
+      &lt;/section&gt;
 
-    &lt;div&gt;
-      &lt;h2&gt;Someone Else&lt;/h2&gt;
-      &lt;h2&gt;Another guy&lt;/h2&gt;
-    &lt;/div&gt;
+      &lt;section&gt;
+        &lt;h2&gt;Dave&lt;/h2&gt;
+        &lt;p&gt;Draws cool stuff.&lt;/p&gt;
+      &lt;/section&gt;
+
+      &lt;section&gt;
+        &lt;h2&gt;Yu Chen Hou&lt;/h2&gt;
+      &lt;/section&gt;
+    &lt;/main&gt;
+
+    &lt;footer&gt;
+      &lt;p&gt;Copyright 2016, Emerald Language&lt;/p&gt;
+    &lt;/footer&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code></pre>
     </section>

@@ -1,11 +1,20 @@
+* ->
+  Emerald Language Wesite
+  Copyright 2016, Emerald Language
+
 html
   head
     title Emerald language
+
     styles
       "css/emerald.css"
       "css/syntax.css"
 
-    meta(
+    scripts
+      "js/syntax.js"
+
+    * NOTE: add metas rule.
+    meta (
       name "viewport"
       content "width=device-width"
     )
@@ -28,26 +37,27 @@ html
             html
               head
                 title Emerald Example
+
                 styles
-                  "css/nav.css"
                   "css/main.css"
                   "css/footer.css"
 
+                scripts
+                  "js/main.js"
+
               body
                 header
-                  h1 Test this out
-                  button.primary Click me
+                  h1 Emerald Language
+                  h3 The people
 
                 main
                   each people as person
-                  div
+                  section
                     h2 |person.name|
                     p  |person.info|
 
-                * Mabye do copyright here?
                 footer
-                  p -> Like what you see?
-                    Check out the docs for more examples!
+                  p Copyright 2016, Emerald Language
 
         h2.code
           span context.json (
@@ -57,8 +67,9 @@ html
           code =>
             {
               people: [
-                {name: "Someone", info: "A guy"},
-                {name: "Someone Else", info: "Another guy"}
+                {name: "Andrew", info: "Plays the sax."},
+                {name: "Dave", info: "Draws cool stuff."}
+                {name: "Yu Chen Hou"}
               ]
             }
 
@@ -73,24 +84,39 @@ html
           code ->
             <html>
               <head>
-                <title>Sample 1</title>
-                <link rel="stylesheet" href="css/style.css" />
+                <title>Emerald Example</title>
+
+                <link rel="stylesheet" href="css/main.css" />
+                <link rel="stylesheet" href="css/footer.css" />
+
+                <script type="text/javascript" src="js/main.js"></script>
               </head>
+
               <body>
-                <div>
-                  <h1>Test this out</h1>
-                  <button class="primary">Click me</button>
-                </div>
+                <header>
+                  <h1>Emerald Language</h1>
+                  <h3>The people</h3>
+                </header>
 
-                <div>
-                  <h2>Someone</h2>
-                  <h2>A guy</h2>
-                </div>
+                <main>
+                  <section>
+                    <h2>Andrew</h2>
+                    <p>Plays the sax.</p>
+                  </section>
 
-                <div>
-                  <h2>Someone Else</h2>
-                  <h2>Another guy</h2>
-                </div>
+                  <section>
+                    <h2>Dave</h2>
+                    <p>Draws cool stuff.</p>
+                  </section>
+
+                  <section>
+                    <h2>Yu Chen Hou</h2>
+                  </section>
+                </main>
+
+                <footer>
+                  <p>Copyright 2016, Emerald Language</p>
+                </footer>
               </body>
             </html>
 
