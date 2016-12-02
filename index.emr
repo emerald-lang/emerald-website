@@ -1,6 +1,6 @@
 * ->
-  Emerald Language Wesite
-  Copyright 2016, Emerald Language
+  Emerald Language Website
+  Copyright 2016, Emerald
 
 html
   head
@@ -21,9 +21,6 @@ html
     )
 
   body
-    p Test this out. (
-      id "test"
-    )
     header
       h1 Emerald
       p A language agnostic templating engine
@@ -80,7 +77,7 @@ html
             }
 
       section
-        h2.code
+        h2
           span sample.html (
             class "code"
           )
@@ -91,7 +88,6 @@ html
             <html>
               <head>
                 <title>Emerald Example</title>
-
                 <link rel="stylesheet" href="css/main.css" />
                 <link rel="stylesheet" href="css/footer.css" />
 

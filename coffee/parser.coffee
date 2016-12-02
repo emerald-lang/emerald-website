@@ -1,5 +1,5 @@
 #
-# Emerald Language
+# Emerald Language Website
 # Copyright 2016, Emerald
 #
 # NOTE: this is pretty bad, just search and replace for keywords,
@@ -8,9 +8,9 @@
 #
 
 $ ->
-  code = $ '#main-code' # generalize this
+  # Get the emerald code on the page
+  code = $ '#main-code'
   text = code[0].innerText
-  console.log text
 
   # Regex for keywords - (this is bad I know)
   keywords = new RegExp 'scripts|styles|metas|each|as', "g"
@@ -25,6 +25,5 @@ $ ->
                  .replace(vars, '<span class="syntax-attr"></span>')
                  .replace(strings, '<span class="syntax-string"></span>')
 
-  console.log new_text
   # Change the inner html with the new parsed one
   code[0].innerHTML = new_text
