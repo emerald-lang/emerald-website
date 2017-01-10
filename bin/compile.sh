@@ -6,5 +6,5 @@ mv index.emr.html index.html
 
 # Compile sass and coffeescript here
 coffee -o ./js/ -c coffee/parser.coffee
-sass -I css/emerald.css sass/emerald.sass
-sass -I css/syntax.css sass/syntax.sass
+sass -I sass/emerald.sass css/emerald.css
+sass -I sass/syntax.sass css/syntax.css

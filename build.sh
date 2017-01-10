@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+gem install sass
+gem install coffee
+
 # compile sass and coffeescript
 ./bin/compile.sh
 
