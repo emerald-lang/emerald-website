@@ -1,0 +1,9 @@
+pre code {
+  color: white;
+  background-color: #333; }
+  pre code .tag {
+    color: goldenrod; }
+  pre code .variable {
+    color: #d54e53; }
+
+/*# sourceMappingURL=syntax.css.map */
