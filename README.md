@@ -4,5 +4,5 @@
 ```
 gem install sass
 gem install coffee
-./compile.sh
+bin/compile.sh
 ```
