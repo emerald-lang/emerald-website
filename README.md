@@ -2,7 +2,6 @@
 
 ## Running it locally
 ```
-gem install sass
-gem install coffee
+bundle install
 bin/compile.sh
 ```
