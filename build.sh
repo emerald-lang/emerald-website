@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 gem install sass
-gem install coffee
 
 git clone git@github.com:emerald-lang/emerald.git
 cd emerald
